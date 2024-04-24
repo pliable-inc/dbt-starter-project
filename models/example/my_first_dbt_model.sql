@@ -16,7 +16,10 @@ with source_data as (
 
 )
 
-select *
+select *,
+hash(*) as _plb_uuid,
+current_timestamp() as _plb_loaded_at
+
 from source_data
 
 /*

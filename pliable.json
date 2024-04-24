@@ -1,5 +1,55 @@
 {
     "plb_config_version": "1",
-    "generated_at": "2024-04-24T14:56:28.260899",
-    "nodes": []
+    "generated_at": "2024-04-24T19:35:51.726228",
+    "nodes": [
+        {
+            "id": "66295f01ad2b5c039faa4837",
+            "name": "kansas",
+            "description": "",
+            "type": "STACK",
+            "dbt_model_path": null,
+            "dbt_schema": null,
+            "config": {
+                "table_name": "",
+                "combine_logic_gate": "AND",
+                "combine_required_match_count": 1,
+                "combine_behavior": "MERGE",
+                "composite_key": null,
+                "last_modified_column": null,
+                "fields": [
+                    {
+                        "id": "QM6J687O5U",
+                        "type": "STRING",
+                        "label": "ID",
+                        "name": "ID",
+                        "description": "",
+                        "map_options": [
+                            {
+                                "id": "5YDQF9JK3Z",
+                                "source_node_id": "my_second_dbt_model",
+                                "attribute_key": "ID",
+                                "attribute_id": "b718adec73e04ce3ec720dd11a06a308",
+                                "concat_joiner": null,
+                                "combination_rule": "PICK_ONE",
+                                "sub_options": null,
+                                "join_path": null
+                            }
+                        ],
+                        "part_of_composite_key": false,
+                        "taxonomic_id": "",
+                        "transformer": null,
+                        "transformer_arguments": null,
+                        "relationship_id": null,
+                        "merge_behavior": "PRIORITIZE",
+                        "advanced_mode": false,
+                        "custom_sql": null
+                    }
+                ],
+                "filters": null,
+                "upstream_nodes": [
+                    "my_second_dbt_model"
+                ]
+            }
+        }
+    ]
 }
